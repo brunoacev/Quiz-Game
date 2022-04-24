@@ -5,4 +5,76 @@
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+#quiz {
+    margin-top: 5%;
+}
+
+button {
+    display: block;
+    width: 200px;
+    padding: 10px;    
+}
+
+.respostas{
+    margin: auto auto;
+    margin-bottom: 1%;
+}
+
+#confirm {
+    margin: auto auto;
+    background-color: rgb(8, 187, 8);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#confirm:hover {
+    background-color: rgb(32, 122, 32);
+}
+
+.respostas{
+    border: none;
+}
+
+.respostas.select{
+    background-color: rgb(77, 235, 77);
+    border-radius: 10px;
+    color: white;
+}
+
+.respostas:hover {
+    background-color: rgb(77, 235, 77);
+    transition: all .2s;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.wrong_answer {
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+
+.correct_answer {
+    background-color: rgb(248, 248, 29);
+    border-radius: 10px;
+    color: white;
+    animation: lightCorrectAnswr .8s infinite;
+}
+
+@keyframes lightCorrectAnswr {
+    0%,
+    49% {
+        background-color: rgb(18, 241, 18);
+    }
+    50%,
+    100% {
+        background-color: rgb(5, 202, 38);
+    }
 }
